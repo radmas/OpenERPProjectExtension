@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>        
+    
+    	<!-- ******************* VISTA KANBAN ******************** -->
+    
+        <record id="project_task_kanban_inh" model="ir.ui.view">
+            <field name="name">project.task.kanban.inh</field>
+            <field name="model">project.task</field>
+            <field name="type">kanban</field>
+            <field name="inherit_id" ref="project.view_task_kanban" />
+            <field name="arch" type="xml">
+                <xpath expr="/kanban/templates/t[@t-name='kanban-box']/div/div/div[@class='oe_kanban_box_content oe_kanban_color_bglight oe_kanban_box_show_onclick_trigger']/div/span" position="replace">
+                    <span class="oe_kanban_project_task_priority" style="white-space: nowrap; padding-left: 5px; float: right;">
+                        <field name="user_id" />
+                        <div class="oe_kanban_clear"/>
+                        <field name="priority"/>
+                    </span>
+                </xpath>
+                <xpath expr="/kanban/templates/t[@t-name='kanban-box']/div/div/table/tr/td[last()]" position="before">
+                    <td>
+                    	<div>#
+                    		<field name="id" />
+                    	</div>
+                    </td>                                    
+                    <td>
+                    	<field name="remaining_hours" />
+                    </td>                                    
+                </xpath>
+                <xpath expr="/kanban/templates/t[@t-name='kanban-box']/div/div/table/tr/td[1]" position="replace" />
+            </field>
+        </record>
+        
+        <!-- ******************* VISTA TREE ******************** -->
+        
+        <record id="project_task_tree2_inh" model="ir.ui.view">
+            <field name="name">project.task.tree2.inh</field>
+            <field name="model">project.task</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="project.view_task_tree2" />
+            <field name="arch" type="xml">
+            	<field name="name" position="before">
+            		<field name="id" />
+            	</field>
+                <field name="planned_hours" position="before">
+                    <field name="project_task_category_id" />
+                    <field name="project_version_id" />
+                    <field name="priority" />
+                </field>
+            </field>
+        </record>
+        
+        <!-- ******************* VISTA FORM ******************** -->
+        
+        <record id="project_task_form2_inh" model="ir.ui.view">
+            <field name="name">project.task.form2.inh</field>
+            <field name="model">project.task</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+            	<field name="progress" position="after">
+            		<field name="id" />
+            		<field name="project_version_id" domain="[('project_id','=',project_id)]" />
+            		<field name="project_task_category_id" domain="[('project_ids','in',project_id)]" />
+            	</field>
+                <xpath expr="/form/notebook/page[@string='Information']/field[@name='work_ids']" position="after">
+                	<field colspan="4" name="project_task_activity_ids" nolabel="1" />
+                    <field colspan="4" name="project_issue_ids" nolabel="1" />
+                </xpath>
+                <xpath expr="/form/notebook/page[@string='Information']/field[@name='work_ids']/tree/field[@name='name']" position="after">
+                    <field name="work_type_id" widget="selection"/>
+                </xpath>
+            </field>
+        </record>
+    		
+    	<!-- ******************* VISTA SEARCH ******************** -->
+    
+        <record id="view_task_search_form_inh" model="ir.ui.view">
+            <field name="name">project.task.search.inh</field>
+            <field name="model">project.task</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="project.view_task_search_form" />
+            <field name="arch" type="xml">
+                <field name="name" position="before">
+                	<field name="id" />  
+                </field>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

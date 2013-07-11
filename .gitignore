@@ -1,0 +1,9 @@
+.project
+.pydevproject
+.settings/
+*/nbproject/
+*.pyc
+project_extension/security/.~lock.ir.model.access.csv#
+project_extension/i18n/*.po~
+.bzr/
+.directory

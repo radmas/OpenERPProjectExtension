@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+
+		<!-- *********************** VISTA TREE ****************** -->
+
+		<record model="ir.ui.view" id="project_version_tree_view">
+			<field name="name">project.version.tree.view</field>
+			<field name="model">project.version</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Project Versions" >
+					<field name="name" />
+					<field name="description" />
+					<field name="project_id" />
+				</tree>
+			</field>
+		</record>
+		
+		<!-- *********************** VISTA SEARCH ****************** -->
+
+		<record model="ir.ui.view" id="project_version_search_view">
+			<field name="name">project.version.search.view</field>
+			<field name="model">project.version</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+                <search string="Search Project Versions">
+                    <group>
+						<field name="name" />
+						<field name="project_id" />
+                    </group>
+                 </search>				
+			</field>
+		</record>
+
+		<!-- ******************* VISTA FORM ******************** -->
+
+		<record model="ir.ui.view" id="project_version_form_view">
+			<field name="name">project.version.form.view</field>
+			<field name="model">project.version</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Project Version" >
+					<group colspan="8" col="6">
+						<field name="name" />
+						<field name="project_id" />
+						<field name="description" colspan="4" />
+					</group>					
+				</form>
+			</field>
+		</record>
+    
+    	<!-- ***** ACCIÓN PARA LA VENTANA DE LAS VISTAS ***** -->
+
+		<record model="ir.actions.act_window" id="action_project_version_form">
+			<field name="name">Project Version</field>
+			<field name="res_model">project.version</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>	
+
+		<!-- *** DEFINO LA OPCION DE MENU *** -->
+		
+		<menuitem id="project_version_menu_view" name="Project Version"
+			parent="project.menu_definitions" action="action_project_version_form" />	
+
+	</data>
+</openerp>

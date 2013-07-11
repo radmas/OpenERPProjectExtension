@@ -1,7 +1,32 @@
-OpenERPProjectExtension
-=======================
 
-Este módulo extiende la funcionalidad base del módulo de gestión de proyectos de OpenERP.
+# -*- encoding: utf-8 -*-
+##############################################################################
+#
+#    OpenERP, Open Source Management Solution    
+#    Copyright (C) 2004-2010 Tiny SPRL (http://tiny.be). All Rights Reserved
+#    
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see http://www.gnu.org/licenses/.
+#
+##############################################################################
+
+{
+    'name': 'Project Extension',
+    'version': '1.0',
+    'category': 'Project',
+    'description': """
+        Este módulo extiende la funcionalidad base del módulo de gestión de proyectos de OpenERP.
         Este módulo está pensado para PYMES que cuya actividad empresarial sea la ejecución de proyectos, y que necesiten un mayor control en cuanto a la dedicación temporal de los empleados de la empresa, a cada uno de los proyectos/tareas/incidencias. 
         Posteriormente ser permite explotar esa información para hacer análisis de dedicación de los empleados a cada uno de los proyectos.
         Además este módulo permite la posibilidad de abrir el ERP a clientes, para que puedan ver el estado actual de los proyectos, y que puedan reportar incidencias.
@@ -56,3 +81,25 @@ Este módulo extiende la funcionalidad base del módulo de gestión de proyectos
               - Incidencias
 
         NOTA: Usuarios que se vayan a asignar al grupo de clientes, deberán estar configurados también como Vista Extendida, para que el cliente pueda ver las pestañas de Comunicación e Historial, e Información Extra, de las Incidencias.
+    """,
+    'author': 'Radmas Technologies S.L.',
+    'maintainer': 'Radmas Technologies S.L.',
+    'website': 'http://www.radmas.com',
+    'depends': ['base', 'project', 'project_issue'],
+    'init_xml': [],
+    'update_xml': [
+        'security/project_security_ext.xml',
+        'project_task_ext_view.xml',
+        'project_task_work_type_view.xml',
+        'project_version_view.xml',
+        'project_project_ext_view.xml',
+        'project_task_category_view.xml',
+        'project_task_activity_view.xml',
+        'project_issue_ext_view.xml',
+        'hr_department_ext_view.xml',
+        'report/project_task_work_report_view.xml',
+        'security/ir.model.access.csv'
+    ],
+    'installable': True,
+    'active': False,
+}

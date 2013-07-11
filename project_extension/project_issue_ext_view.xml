@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>        
+    
+    	<!-- ******************* VISTA TREE ******************** -->
+    
+    	<record id="project_extension.project_issue_tree_inh" model="ir.ui.view">
+            <field name="name">project.issue.tree.inh</field>
+            <field name="model">project.issue</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="project_issue.project_issue_tree_view"/>
+            <field name="arch" type="xml">
+            	<field name="version_id" position="replace" />                
+            </field>
+        </record>        
+        
+		<!-- ******************* VISTA FORM ******************** -->
+		
+        <record id="project_extension.project_issue_form_inh" model="ir.ui.view">
+            <field name="name">project.issue.form.inh</field>
+            <field name="model">project.issue</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="project_issue.project_issue_form_view"/>
+            <field name="arch" type="xml">
+            	<field name="version_id" position="replace" />
+            	<xpath expr="//form//notebook//page[@string='General']//button[@name='case_escalate']" position="replace" /> 
+            </field>
+        </record>        
+        
+    </data>
+</openerp>

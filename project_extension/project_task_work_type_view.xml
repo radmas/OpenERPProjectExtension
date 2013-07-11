@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- *********************** VISTA TREE ****************** -->        
+
+        <record model="ir.ui.view" id="project_task_work_type_tree_view">
+            <field name="name">project.task.work.type.tree.view</field>
+            <field name="model">project.task.work.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Task Work Types">
+                    <field name="sequence" />
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+		<!-- ******************* VISTA FORM ******************** -->
+
+		<record model="ir.ui.view" id="project_task_work_type_form_view">
+			<field name="name">project.task.work.type.form.view</field>
+			<field name="model">project.task.work.type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Task Work Type">
+                    <field name="sequence" />
+					<field name="name" />
+				</form>
+			</field>
+		</record>
+
+        <!-- ***** ACCIÓN PARA LA VENTANA DE LAS VISTAS ***** -->
+        
+        <record id="action_project_task_work_type_form" model="ir.actions.act_window">
+            <field name="name">Task Work Types</field>
+            <field name="res_model">project.task.work.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>     
+        
+        <!-- *** DEFINO LA OPCION DE MENU *** -->
+           
+        <menuitem id="menu_project_task_work_type" action="action_project_task_work_type_form"
+        	parent="project.menu_definitions" />
+        
+    </data>
+</openerp>
+        

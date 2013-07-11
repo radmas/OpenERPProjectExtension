@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>        
+    		
+    	<!-- ******************* VISTA TREE ******************** -->
+    
+        <record id="hr_department_tree_view" model="ir.ui.view">
+            <field name="name">hr.department.tree.inh</field>
+            <field name="model">hr.department</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="hr.view_department_tree" />
+            <field name="arch" type="xml">
+                <field name="manager_id" position="before">
+                	<field name="parent_id" />  
+                </field>
+            </field>
+        </record>
+    		
+    	<!-- ******************* VISTA SEARCH ******************** -->
+    
+        <record id="hr_department_search_view" model="ir.ui.view">
+            <field name="name">hr.department.search.inh</field>
+            <field name="model">hr.department</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="hr.view_department_filter" />
+            <field name="arch" type="xml">
+                <field name="manager_id" position="after">
+                	<field name="parent_id" />                	
+                    <newline />
+                    <group expand="0" string="Group By...">
+                    	<filter string="Parent" context="{'group_by':'parent_id'}" icon="terp-folder-violet"/>
+                    </group>     
+                </field>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

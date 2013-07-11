@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>    
+
+		<!-- *********************** VISTA TREE ****************** -->
+
+		<record model="ir.ui.view" id="project_task_activity_tree_view">
+			<field name="name">project.task.activity.tree.view</field>
+			<field name="model">project.task.activity</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Activity" >
+					<field name="text" />
+					<field name="date" />
+					<field name="user_id" />
+				</tree>
+			</field>
+		</record>	
+
+		<!-- ******************* VISTA FORM ******************** -->
+
+		<record model="ir.ui.view" id="project_task_activity_form_view">
+			<field name="name">project.task.activity.form.view</field>
+			<field name="model">project.task.activity</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Activity" >
+					<group>
+						<field name="date" />
+						<field name="user_id" />
+						<field name="text" colspan="4" />
+					</group>					
+				</form>
+			</field>
+		</record>
+
+	</data>
+</openerp>
