@@ -45,6 +45,7 @@
         
         Incidencias:
         - Se ha eliminado de la vista el campo versión de incidencia y el botón de Escalar.
+        - Se ha establecido una restricción en los campos de información de contacto, para que sólo los puedan ver los grupos Usuario y Responsable.
         
         Análisis de Imputaciones:
         - Se ha creado una pantalla que permite hacer un análisis de las imputaciones de tareas (tiempo), para hacer un seguimiento de las imputaciones del personal.
