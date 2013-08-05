@@ -39,4 +39,6 @@ class project_version(osv.osv):
                 'project_id': fields.many2one('project.project', 'Project', required=True),
                 }
     
+    _order = 'project_id'
+    
 project_version()

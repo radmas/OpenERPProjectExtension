@@ -10,9 +10,9 @@
 			<field name="type">tree</field>
 			<field name="arch" type="xml">
 				<tree string="Project Versions" >
+					<field name="project_id" />  
 					<field name="name" />
 					<field name="description" />
-					<field name="project_id" />
 				</tree>
 			</field>
 		</record>
@@ -28,7 +28,11 @@
                     <group>
 						<field name="name" />
 						<field name="project_id" />
-                    </group>
+                    </group>        	
+                    <newline />
+                    <group expand="0" string="Group By...">
+                    	<filter string="Project" context="{'group_by':'project_id'}" icon="terp-folder-violet"/>
+                  	</group>
                  </search>				
 			</field>
 		</record>
