@@ -24,6 +24,14 @@
             <field name="arch" type="xml">
             	<field name="version_id" position="replace" />
             	<xpath expr="//form//notebook//page[@string='General']//button[@name='case_escalate']" position="replace" /> 
+            	<xpath expr="//form//notebook//page[@string='General']//group[1]" position="replace">
+            		<group col="2" colspan="2" groups="project.group_project_user, project.group_project_manager">
+	                    <separator colspan="2" string="Contact Information"/>
+	                    <field name="partner_id" on_change="onchange_partner_id(partner_id, email_from)"/>
+	                    <field name="partner_address_id" string="Contact" on_change="onchange_partner_address_id(partner_address_id, email_from)"/>
+	                    <field name="email_from"/>
+                    </group>
+            	</xpath>
             </field>
         </record>        
         
