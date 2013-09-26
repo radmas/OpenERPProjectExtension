@@ -49,7 +49,7 @@
         </record>
         
         <menuitem
-            icon="terp-project" id="project_exte.menu_main_client"
+            icon="terp-project" id="project_ext.menu_main_client"
             action="project.open_view_project_all"
             name="Project" sequence="10"
             groups="group_project_client"
