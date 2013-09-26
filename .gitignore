@@ -3,7 +3,7 @@
 .settings/
 */nbproject/
 *.pyc
-project_extension/security/.~lock.ir.model.access.csv#
-project_extension/i18n/*.po~
+project_ext/security/.~lock.ir.model.access.csv#
+project_ext/i18n/*.po~
 .bzr/
 .directory

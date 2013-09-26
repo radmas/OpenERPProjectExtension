@@ -49,18 +49,18 @@
         </record>
         
         <menuitem
-            icon="terp-project" id="project_extension.menu_main_client"
+            icon="terp-project" id="project_exte.menu_main_client"
             action="project.open_view_project_all"
             name="Project" sequence="10"
             groups="group_project_client"
             web_icon="images/project.png"
             web_icon_hover="images/project-hover.png"/>
             
-        <menuitem id="project_extension.menu_project_management" name="Project" parent="project_extension.menu_main_client" sequence="1"/>
+        <menuitem id="project_ext.menu_project_management" name="Project" parent="project_ext.menu_main_client" sequence="1"/>
         
-        <menuitem action="project.open_view_project_all" id="project_extension.menu_action_view_project" parent="project_extension.menu_project_management" sequence="3"/>
-        <menuitem action="project.action_view_task" id="project_extension.menu_action_view_task" parent="project_extension.menu_project_management" sequence="3"/>
-        <menuitem action="project_issue.project_issue_categ_act0" id="project_extension.menu_project_view_issue" parent="project_extension.menu_project_management" sequence="3" />
+        <menuitem action="project.open_view_project_all" id="project_ext.menu_action_view_project" parent="project_ext.menu_project_management" sequence="3"/>
+        <menuitem action="project.action_view_task" id="project_ext.menu_action_view_task" parent="project_ext.menu_project_management" sequence="3"/>
+        <menuitem action="project_issue.project_issue_categ_act0" id="project_ext.menu_project_view_issue" parent="project_ext.menu_project_management" sequence="3" />
         
     </data>
 </openerp>

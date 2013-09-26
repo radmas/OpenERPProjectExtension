@@ -4,7 +4,7 @@
     
     	<!-- ******************* VISTA TREE ******************** -->
     
-    	<record id="project_extension.project_issue_tree_inh" model="ir.ui.view">
+    	<record id="project_ext.project_issue_tree_inh" model="ir.ui.view">
             <field name="name">project.issue.tree.inh</field>
             <field name="model">project.issue</field>
             <field name="type">tree</field>
@@ -16,7 +16,7 @@
         
 		<!-- ******************* VISTA FORM ******************** -->
 		
-        <record id="project_extension.project_issue_form_inh" model="ir.ui.view">
+        <record id="project_ext.project_issue_form_inh" model="ir.ui.view">
             <field name="name">project.issue.form.inh</field>
             <field name="model">project.issue</field>
             <field name="type">form</field>
