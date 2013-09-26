@@ -6,7 +6,7 @@
 			<field name="category_id" ref="base.module_category_project_management" />
 		</record>
 
-	    <record model="ir.rule" id="project_extension.proyect_client">
+	    <record model="ir.rule" id="project_ext.proyect_client">
 	        <field name="name">Client Projects</field>
 	        <field name="model_id" ref="project.model_project_project"/>
 	        <field name="global" eval="False"/>
@@ -14,7 +14,7 @@
         	<field name="groups" eval="[(4,ref('group_project_client'))]"/>
 	    </record>
 
-	    <record model="ir.rule" id="project_extension.task_client">
+	    <record model="ir.rule" id="project_ext.task_client">
 	        <field name="name">Client Tasks</field>
 	        <field name="model_id" ref="project.model_project_task"/>
 	        <field name="global" eval="False"/>
@@ -22,7 +22,7 @@
         	<field name="groups" eval="[(4,ref('group_project_client'))]"/>
 	    </record>
 
-	    <record model="ir.rule" id="project_extension.issue_client">
+	    <record model="ir.rule" id="project_ext.issue_client">
 	        <field name="name">Client Issue</field>
 	        <field name="model_id" ref="project_issue.model_project_issue"/>
 	        <field name="global" eval="False"/>

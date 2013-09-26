@@ -1,6 +1,6 @@
 # Translation of OpenERP Server.
 # This file contains the translation of the following modules:
-#	* project_extension
+#	* project_ext
 #
 msgid ""
 msgstr ""
@@ -15,135 +15,135 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task,project_task_category_id:0
 #: view:project.task.work.report:0
 msgid "Category"
 msgstr "Categoría"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Last Month"
 msgstr "Último Mes"
 
-#. module: project_extension
+#. module: project_ext
 #: constraint:project.task:0
 msgid "Error ! Task end-date must be greater then task start-date"
 msgstr "¡ Error ! La fecha final de la tarea debe ser mayor que la fecha de inicio"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Task Work creating yesterday"
 msgstr "Imputaciones de ayer"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task_work
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task_work
 msgid "Project Task Work"
 msgstr "Imputaciones de Tarea"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Search"
 msgstr "Búsqueda"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task_work_type
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task_work_type
 msgid "project.task.work.type"
 msgstr "project.task.work.type"
 
-#. module: project_extension
+#. module: project_ext
 #: view:hr.department:0
 #: view:project.task.work.report:0
 msgid "Group By..."
 msgstr "Agrupar por..."
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.project,internal:0
 msgid "Internal"
 msgstr "Interno"
 
-#. module: project_extension
-#: model:ir.actions.act_window,name:project_extension.action_project_version_form
-#: model:ir.model,name:project_extension.model_project_version
-#: model:ir.ui.menu,name:project_extension.project_version_menu_view
+#. module: project_ext
+#: model:ir.actions.act_window,name:project_ext.action_project_version_form
+#: model:ir.model,name:project_ext.model_project_version
+#: model:ir.ui.menu,name:project_ext.project_version_menu_view
 #: view:project.version:0
 msgid "Project Version"
 msgstr "Versión de Proyecto"
 
-#. module: project_extension
-#: model:ir.ui.menu,name:project_extension.menu_action_view_task
+#. module: project_ext
+#: model:ir.ui.menu,name:project_ext.menu_action_view_task
 msgid "Tasks"
 msgstr "Tareas"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task,project_task_activity_ids:0
 msgid "Task Activities"
 msgstr "Actividades"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "7 Days"
 msgstr "7 Días"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Task Work creating during last week"
 msgstr "Imputaciones de la semana pasada"
 
-#. module: project_extension
-#: model:ir.actions.act_window,name:project_extension.action_project_task_work_type_form
-#: model:ir.ui.menu,name:project_extension.menu_project_task_work_type
+#. module: project_ext
+#: model:ir.actions.act_window,name:project_ext.action_project_task_work_type_form
+#: model:ir.ui.menu,name:project_ext.menu_project_task_work_type
 #: view:project.task.work.type:0
 msgid "Task Work Types"
 msgstr "Tipos de Imputaciones"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "March"
 msgstr "Marzo"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "August"
 msgstr "AgostoAgosto"
 
-#. module: project_extension
+#. module: project_ext
 #: view:hr.department:0
 msgid "Parent"
 msgstr "Padre"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "May"
 msgstr "Mayo"
 
-#. module: project_extension
+#. module: project_ext
 #: constraint:project.task:0
 msgid "Error ! You cannot create recursive tasks."
 msgstr "¡Error! No puede crear tareas recursivas."
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.work.report,company_id:0
 msgid "Company"
 msgstr "Compañía"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "June"
 msgstr "Junio"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Yesterday"
 msgstr "Ayer"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.work.report,hours:0
 msgid "Hours"
 msgstr "Horas"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task
 #: field:project.task.activity,task_id:0
 #: view:project.task.work.report:0
 #: field:project.task.work.report,task_category_id:0
@@ -152,66 +152,66 @@ msgstr "Horas"
 msgid "Task"
 msgstr "Tarea"
 
-#. module: project_extension
+#. module: project_ext
 #: constraint:project.project:0
 msgid "Error! project start-date must be lower then project end-date."
 msgstr "¡Error! La fecha de inicio del proyecto debe ser anterior a la fecha final del proyecto."
 
-#. module: project_extension
+#. module: project_ext
 #: constraint:project.project:0
 msgid "Error! You cannot assign escalation to the same project!"
 msgstr "¡Error! No puede asignar un escalado al mismo proyecto."
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.activity,date:0
 #: field:project.task.work.report,date:0
 msgid "Date"
 msgstr "Fecha"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "July"
 msgstr "Julio"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 #: field:project.task.work.report,day:0
 msgid "Day"
 msgstr "Día"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.project,project_category_ids:0
 msgid "Categories"
 msgstr "Categorías"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.activity,user_id:0
 #: view:project.task.work.report:0
 msgid "User"
 msgstr "Usuario"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task_work_report
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task_work_report
 msgid "project.task.work.report"
 msgstr "project.task.work.report"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "February"
 msgstr "Febrero"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "October"
 msgstr "Octubre"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.work,work_type_id:0
 #: view:project.task.work.type:0
 msgid "Task Work Type"
 msgstr "Tipo de Imputación"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.category,name:0
 #: field:project.task.work.report,name:0
 #: field:project.task.work.type,name:0
@@ -219,187 +219,187 @@ msgstr "Tipo de Imputación"
 msgid "Name"
 msgstr "Nombre"
 
-#. module: project_extension
-#: model:ir.actions.act_window,name:project_extension.action_project_task_work_report
-#: model:ir.ui.menu,name:project_extension.menu_project_issue_report_tree
+#. module: project_ext
+#: model:ir.actions.act_window,name:project_ext.action_project_task_work_report
+#: model:ir.ui.menu,name:project_ext.menu_project_issue_report_tree
 #: view:project.task.work.report:0
 msgid "Task Work Analysis"
 msgstr "Análisis de Imputaciones"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "January"
 msgstr "Enero"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Today"
 msgstr "Hoy"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 #: field:project.task.work.report,year:0
 msgid "Year"
 msgstr "Año"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Last Week"
 msgstr "Semana Pasada"
 
-#. module: project_extension
-#: model:ir.actions.act_window,help:project_extension.action_project_task_work_report
+#. module: project_ext
+#: model:ir.actions.act_window,help:project_ext.action_project_task_work_report
 msgid "This report on the project issues allows you to analyse the quality of your support or after-sales services. You can track the issues per age. You can analyse the time required to open or close an issue, the number of email to exchange and the time spent on average by issues."
 msgstr "Este informe sobre las incidencias del proyecto permite analizar la calidad de su soporte o los servicios postventa. Puede hacer un seguimiento de las incidencias por antigüedad. Puede analizar el tiempo requerido en abrir o cerrar una incidencia, el número de correos intercambiados y el tiempo gastado en promedio por incidencia."
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_project
-#: model:ir.ui.menu,name:project_extension.menu_main_client
-#: model:ir.ui.menu,name:project_extension.menu_project_management
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_project
+#: model:ir.ui.menu,name:project_ext.menu_main_client
+#: model:ir.ui.menu,name:project_ext.menu_project_management
 #: view:project.task.work.report:0
 #: field:project.task.work.report,project_id:0
 #: field:project.version,project_id:0
 msgid "Project"
 msgstr "Proyecto"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "April"
 msgstr "Abril"
 
-#. module: project_extension
-#: model:res.groups,name:project_extension.group_project_client
+#. module: project_ext
+#: model:res.groups,name:project_ext.group_project_client
 msgid "Client"
 msgstr "Cliente"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.activity:0
 msgid "Activity"
 msgstr "Actividad"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Task Work creating during last 7 days"
 msgstr "Imputaciones de los últimos 7 días"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Work Type"
 msgstr "Imputación"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "November"
 msgstr "Noviembre"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.version,description:0
 msgid "Description"
 msgstr "Descripción"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.work.report,user_id:0
 msgid "Assigned to"
 msgstr "Asignado a"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Current Week"
 msgstr "Semana Actual"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_issue_report
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_issue_report
 msgid "project.issue.report"
 msgstr "proyecto.incidencia.informe"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task,project_issue_ids:0
 msgid "Project Issues"
 msgstr "Incidencias"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Current Month"
 msgstr "Mes Actual"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 msgid "Todays' Task Work"
 msgstr "Imputaciones de Hoy"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.category,sequence:0
 #: field:project.task.work.type,sequence:0
 msgid "Sequence"
 msgstr "Secuencia"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "September"
 msgstr "Septiembre"
 
-#. module: project_extension
+#. module: project_ext
 #: selection:project.task.work.report,month:0
 msgid "December"
 msgstr "Diciembre"
 
-#. module: project_extension
-#: model:ir.actions.act_window,name:project_extension.action_project_task_category_form
-#: model:ir.ui.menu,name:project_extension.menu_project_task_category
+#. module: project_ext
+#: model:ir.actions.act_window,name:project_ext.action_project_task_category_form
+#: model:ir.ui.menu,name:project_ext.menu_project_task_category
 #: view:project.task.category:0
 msgid "Task Categories"
 msgstr "Categorías de Tarea"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.work.report:0
 #: field:project.task.work.report,month:0
 msgid "Month"
 msgstr "Mes"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task_activity
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task_activity
 msgid "Project Task Activity"
 msgstr "Actividad de Tarea"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.version:0
 msgid "Search Project Versions"
 msgstr "Búsqueda de Versiones de Proyecto"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.project,project_version_ids:0
 #: view:project.version:0
 msgid "Project Versions"
 msgstr "Versiones de Proyecto"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task,project_version_id:0
 msgid "Version"
 msgstr "Versión"
 
-#. module: project_extension
-#: model:ir.ui.menu,name:project_extension.menu_action_view_project
+#. module: project_ext
+#: model:ir.ui.menu,name:project_ext.menu_action_view_project
 #: field:project.task.category,project_ids:0
 msgid "Projects"
 msgstr "Proyectos"
 
-#. module: project_extension
+#. module: project_ext
 #: field:project.task.activity,text:0
 msgid "Text"
 msgstr "Texto"
 
-#. module: project_extension
-#: model:ir.model,name:project_extension.model_project_task_category
+#. module: project_ext
+#: model:ir.model,name:project_ext.model_project_task_category
 msgid "project.task.category"
 msgstr "project.task.category"
 
-#. module: project_extension
+#. module: project_ext
 #: view:project.task.category:0
 msgid "Task Category"
 msgstr "Categoría de Tarea"
 
-#. module: project_extension
-#: model:ir.ui.menu,name:project_extension.menu_project_view_issue
+#. module: project_ext
+#: model:ir.ui.menu,name:project_ext.menu_project_view_issue
 msgid "Issues"
 msgstr "Incidencias"
 
